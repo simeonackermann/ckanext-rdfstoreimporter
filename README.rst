@@ -42,3 +42,12 @@ do::
     cd ckanext-rdfstoreimporter
     python setup.py develop
     pip install -r dev-requirements.txt
+
+
+------------------------
+Run RDF sync
+------------------------
+
+Run the following command to run the rdf store sync extension (ensuring the pyenv is activated):
+
+     (pyenv) $ paster --plugin=ckanext-rdfstoreimporter rdfstoresync run --config=/etc/ckan/default/production.ini
