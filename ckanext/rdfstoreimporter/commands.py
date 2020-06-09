@@ -25,8 +25,6 @@ class RdfstoreSyncCommand(CkanCommand):
         self._load_config()
         self.log = logging.getLogger(__name__)
 
-        self.log.debug("Hi, I'm the RDF-Store-Importer COMMANDS! ;)")
-
         if len(self.args) == 0:
             self.parser.print_usage()
             return
@@ -70,5 +68,10 @@ class RdfstoreSyncCommand(CkanCommand):
 
         for current_package in current_packages:
             self.log.debug("Package title: %s", current_package['title'])
+
+        #
+        # TODO
+        # - sync packages with external rdfstore here
+        #
 
 

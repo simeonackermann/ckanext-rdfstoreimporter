@@ -83,7 +83,6 @@ setup(
             rdfstoreimporter=ckanext.rdfstoreimporter.plugin:RdfstoreimporterPlugin
 
         [paste.paster_command]
-            # harvester = ckanext.harvest.commands.harvester:Harvester
             rdfstoresync = ckanext.rdfstoreimporter.commands:RdfstoreSyncCommand
 
         [babel.extractors]
